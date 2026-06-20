@@ -17,7 +17,7 @@ This public summary is redacted. Complete file-level manifests were produced bef
 - Ticket 10: documented paper reproduction status and notebook inspection.
 - Ticket 11: validated, staged public-safe files, and committed locally.
 - Ticket 12: pushed a PR-compatible branch and opened draft PR #1.
-- Ticket 13: added known limitations and began post-upload verification.
+- Ticket 13: added known limitations and completed post-upload verification.
 
 ## Public Inventory Aggregates
 
@@ -50,5 +50,19 @@ Coverage reached the configured 85% gate at 86.39% locally.
 - Full legacy RE/CRE benchmark and plotting workflows are preserved locally but not stabilized in the package.
 - Current generated figures and tables are ignored until their reproduction paths are documented and reviewed.
 - Build succeeds with non-blocking setuptools license metadata deprecation warnings.
-- CI was queued after the initial PR push and should be checked before marking the PR ready for review.
+- CI run #2 completed successfully for commit `4bb512a99226d1fffa9be778996c49da3d7f9274`.
+- Fresh-clone validation passed after setting `TMP`/`TEMP` to a writable temp folder inside the clone to avoid a local Windows temp-directory permission issue.
+
+## Upload Verification
+
+- Remote repository: `https://github.com/Levvvi/MO-LSRTDE`
+- Draft PR: `https://github.com/Levvvi/MO-LSRTDE/pull/1`
+- Branch: `chore/restructure-molsrtde-pr`
+- PR branch commit verified: `4bb512a99226d1fffa9be778996c49da3d7f9274`
+- CI run: `https://github.com/Levvvi/MO-LSRTDE/actions/runs/27863362492`
+- GitHub README content and CI badge target were verified through the GitHub connector.
+- Fresh clone installed with `python -m pip install -e ".[dev,analysis,baselines]"`.
+- Fresh clone passed `pytest -q`.
+- Fresh clone passed `python examples\quickstart.py`.
+- Fresh clone passed `python scripts\run_experiment.py --config configs\smoke_test.yaml`.
 
