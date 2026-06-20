@@ -1,0 +1,40 @@
+# 实验总配置
+results_dir: results
+runs: 30                   # 每个 (Problem, Algorithm) 重复次数
+progress_interval: 1000    # 收敛曲线记录步长（按评估次数 FEs）
+base_seed: 2025
+max_workers: 6
+resume: true               # 已有 final_F.csv 时自动跳过
+
+# 测试问题
+problems:
+  - name: THINFILM_AR_VIS_L20
+    type: thinfilm_ar
+    n_layers: 20
+    lambda_min: 400
+    lambda_max: 700
+    n_lambda: 61
+    n0: 1.0
+    nL: 1.45
+    nH: 2.10
+    ns: 1.52
+    pattern: "HL"
+    dmin: 20
+    dmax: 200
+
+algorithms:
+  - name: MO-LSRTDE
+    params:
+      pop_size: 100
+      max_evals: 100000
+      epsilon_init: 0.0
+      sigma_share_init: 0.10
+      restart_interval: 60
+      stagn_tol: 15
+
+
+
+  - name: NSGA-II
+  - name: SPEA2
+  - name: MOEA/D
+

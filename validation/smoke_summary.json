@@ -1,0 +1,18 @@
+[
+  {
+    "problem": "zdt1",
+    "algorithm": "MO-LSRTDE",
+    "run_id": 0,
+    "seed": 0,
+    "pop_size": 10,
+    "max_evals": 30,
+    "n_evals": 30,
+    "n_solutions": 7,
+    "metrics": {
+      "spread": 0.14881121816437712,
+      "igd": 1.2778514831323964,
+      "hypervolume": 3.603051928145764
+    },
+    "output_dir": "results\\smoke\\zdt1\\MO-LSRTDE\\run_0"
+  }
+]
