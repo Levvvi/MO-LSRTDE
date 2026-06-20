@@ -1,0 +1,57 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+
+# Packaging and build outputs
+build/
+dist/
+*.egg-info/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE and local OS state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Raw/generated results and temporary analysis artifacts
+results/*
+!results/.gitkeep
+figures/*
+!figures/.gitkeep
+tables/*
+!tables/.gitkeep
+Bench_result/
+RE_results/
+_codex_output/
+audit/
+temporary_plots/
+temporary_summaries/
+*.tmp
+*.log
+
+# Private, external, and archived material
+archive/
+external/
+private/
+
+# Manuscripts and publication-risk artifacts are excluded by default.
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.pages
+
+# Large spreadsheet outputs are reviewed manually before tracking.
+*.xls
+*.xlsx

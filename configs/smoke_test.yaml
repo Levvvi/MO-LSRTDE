@@ -1,0 +1,25 @@
+{
+  "output_dir": "results/smoke",
+  "validation_summary": "validation/smoke_summary.json",
+  "runs": [
+    {
+      "run_id": 0,
+      "problem": {
+        "name": "zdt1",
+        "params": {
+          "n_var": 5
+        }
+      },
+      "algorithm": {
+        "name": "MO-LSRTDE",
+        "params": {
+          "pop_size": 10,
+          "max_evals": 30,
+          "seed": 0,
+          "restart_interval": 100
+        }
+      }
+    }
+  ]
+}
+
