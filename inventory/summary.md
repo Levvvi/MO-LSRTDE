@@ -16,6 +16,8 @@ This public summary is redacted. Complete file-level manifests were produced bef
 - Ticket 09: updated README, reproducibility docs, and quickstart.
 - Ticket 10: documented paper reproduction status and notebook inspection.
 - Ticket 11: validated, staged public-safe files, and committed locally.
+- Ticket 12: pushed a PR-compatible branch and opened draft PR #1.
+- Ticket 13: added known limitations and began post-upload verification.
 
 ## Public Inventory Aggregates
 
@@ -48,4 +50,5 @@ Coverage reached the configured 85% gate at 86.39% locally.
 - Full legacy RE/CRE benchmark and plotting workflows are preserved locally but not stabilized in the package.
 - Current generated figures and tables are ignored until their reproduction paths are documented and reviewed.
 - Build succeeds with non-blocking setuptools license metadata deprecation warnings.
+- CI was queued after the initial PR push and should be checked before marking the PR ready for review.
 
