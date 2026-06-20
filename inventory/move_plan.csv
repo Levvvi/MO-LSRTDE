@@ -1,0 +1,18 @@
+ticket,action,count,public_note
+03,api_extract,3,Core helper APIs exposed in package modules.
+03,copy_refactor,1,Legacy algorithm core refactored into src/molsrtde.
+04,api_extract,2,Problem interface and ZDT smoke benchmarks added.
+04,copy_refactor,3,Problem and metric behavior migrated into package modules.
+05,api_extract,1,Reusable plotting hook added outside the package.
+05,config_extract,2,Smoke and ZDT config templates added.
+05,copy_refactor,1,Experiment orchestration moved outside the package.
+05,refactor_entrypoint,1,CLI entry point added under scripts.
+06,move_config,1,Legacy config preserved under configs.
+06,move_ignored_generated_audit,54,Generated audit artifacts preserved locally and ignored.
+06,move_ignored_legacy_code,9,Legacy root code preserved locally and ignored.
+06,move_ignored_or_review_table,1,Spreadsheet/table artifact preserved locally and ignored.
+06,move_ignored_paper_material,9,Manuscript/publication-risk artifacts preserved locally and ignored.
+06,move_ignored_raw_results,33317,Raw benchmark outputs preserved locally under ignored results paths.
+06,move_ignored_unknown,1,Unknown file preserved locally for review and ignored.
+06,move_public_candidate_figure,6,Compact figures preserved locally but ignored until reproduction review.
+

@@ -1,0 +1,27 @@
+{
+  "redacted": true,
+  "reason": "The complete inventory contains local private/manuscript paths and is intentionally excluded from public Git history.",
+  "full_manifest_location": "private/inventory/ (ignored locally)",
+  "total_files": 49785,
+  "total_bytes": 1047877618,
+  "categories": [
+    {"category": "algorithm_extension", "count": 9, "total_bytes": 195774, "public_tracking_decision": "archived_or_review_before_public_use"},
+    {"category": "build_artifact", "count": 81, "total_bytes": 30702799, "public_tracking_decision": "ignored"},
+    {"category": "cache_or_temp", "count": 88, "total_bytes": 41634948, "public_tracking_decision": "ignored"},
+    {"category": "config", "count": 14, "total_bytes": 25718050, "public_tracking_decision": "track_reviewed_configs_only"},
+    {"category": "documentation", "count": 63, "total_bytes": 211285, "public_tracking_decision": "track_public_docs"},
+    {"category": "environment_file", "count": 14872, "total_bytes": 534845571, "public_tracking_decision": "ignored"},
+    {"category": "example", "count": 1, "total_bytes": 298, "public_tracking_decision": "track"},
+    {"category": "experiment_script", "count": 6, "total_bytes": 7579, "public_tracking_decision": "track_reviewed_experiment_helpers"},
+    {"category": "figure", "count": 11, "total_bytes": 9904308, "public_tracking_decision": "ignored_until_reproducibility_review"},
+    {"category": "generated_result_raw", "count": 34586, "total_bytes": 382321576, "public_tracking_decision": "ignored"},
+    {"category": "package_source", "count": 15, "total_bytes": 36546, "public_tracking_decision": "track"},
+    {"category": "paper_or_manuscript", "count": 9, "total_bytes": 2135620, "public_tracking_decision": "ignored_private_or_archive"},
+    {"category": "private_or_sensitive", "count": 6, "total_bytes": 10557, "public_tracking_decision": "ignored"},
+    {"category": "table", "count": 10, "total_bytes": 20006314, "public_tracking_decision": "ignored_until_reproducibility_review"},
+    {"category": "test", "count": 5, "total_bytes": 7383, "public_tracking_decision": "track"},
+    {"category": "tooling", "count": 1, "total_bytes": 18890, "public_tracking_decision": "track"},
+    {"category": "unknown", "count": 8, "total_bytes": 120120, "public_tracking_decision": "ignored_preserved_for_review"}
+  ]
+}
+

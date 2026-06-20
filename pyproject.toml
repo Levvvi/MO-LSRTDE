@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mo-lsrtde"
+version = "0.1.0"
+description = "MO-LSRTDE algorithm package for real-valued multi-objective optimization."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Levvvi" },
+]
+keywords = [
+  "differential-evolution",
+  "multi-objective-optimization",
+  "local-search",
+  "restart",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+]
+analysis = [
+  "matplotlib",
+  "pandas",
+  "scipy",
+]
+baselines = [
+  "pymoo",
+]
+docs = [
+  "mkdocs-material",
+  "mkdocstrings[python]",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["molsrtde*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--strict-config", "--strict-markers"]
+
+[tool.coverage.run]
+source = ["src/molsrtde"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+fail_under = 85
+exclude_lines = [
+  "pragma: no cover",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
